@@ -1,0 +1,25 @@
+extends mdl
+
+block content
+  section
+    h1#title
+      span Having a 
+      | bad day?<br />
+      span Enjoy 
+      | this one, 
+      span then 
+      | go on!
+  section
+    div.mdl-card.mdl-shadow--4dp(class='#{card.cssClass}')
+      div.mdl-card__title.bg-img
+      div.mdl-card__supporting-text Found at
+      div.mdl-card__actions.mdl-card--border
+        a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href='#{card.link}', target='_blank') !{card.caption}
+  section
+    button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp(onclick='location.href="/goodmood/allgifs"')
+      | All GIFs
+  footer.mdl-mini-footer
+    div.mdl-mini-footer__right-section &copy; 2016 Maximilian Speicher
+  div#back
+    button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp(onclick='location.href="http://www.maxspeicher.com"')
+      i.fa.fa-arrow-left

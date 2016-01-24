@@ -1,0 +1,98 @@
+body {
+	margin-top: 2em;
+}
+
+footer {
+  margin-top: 4em;
+}
+
+h1#title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+h1#title span {
+	font-family: 'Gentium Book Basic', serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 120%;
+}
+
+section {
+  max-width: 100%;
+  padding: 4em 0em;
+  text-align: center;
+}
+
+#back {
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  z-index: 99;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* MDL CARDS */
+
+.mdl-card {
+  display: inline-block;
+  max-width: 90%;
+}
+
+.mdl-card__title {
+  background: url('/images/gif/gears.gif') center no-repeat;
+  color: #fff;
+}
+
+.bowling-card.mdl-card {
+  width: 209px;
+}
+.bowling-card > .mdl-card__title {
+  padding-top: 156.93780%;
+}
+.bowling-card > .mdl-card__title.bg-img {
+  background: url('/images/gif/bowling.gif') center / cover;
+}
+
+.cat-card.mdl-card {
+  width: 400px;
+}
+.cat-card > .mdl-card__title {
+  padding-top: 56.25%;
+}
+.cat-card > .mdl-card__title.bg-img {
+  background: url('/images/gif/cat.gif') center / cover;
+}
+
+.rubbish-truck-card.mdl-card {
+  width: 350px;
+}
+.rubbish-truck-card > .mdl-card__title {
+  padding-top: 68.57143%
+}
+.rubbish-truck-card > .mdl-card__title.bg-img {
+  background: url('/images/gif/rubbishtruck.gif') center / cover;
+}
+
+.baseball-card.mdl-card {
+  width: 207px;
+}
+.baseball-card > .mdl-card__title {
+  padding-top: 93.23671%;
+}
+.baseball-card > .mdl-card__title.bg-img {
+  background: url('/images/gif/baseball.gif') center / cover;
+}
+
+.poop-card.mdl-card {
+  width: 335px;
+}
+.poop-card > .mdl-card__title {
+  padding-top: 85.97015%;
+}
+.poop-card > .mdl-card__title.bg-img {
+  background: url('/images/gif/poop.gif') center / cover;
+}

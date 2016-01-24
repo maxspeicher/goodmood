@@ -1,0 +1,18 @@
+extends mdl
+
+block content
+  script(src='/javascripts/goodmood.js')
+  each card in cards
+    section
+      div.mdl-card.mdl-shadow--4dp(class='#{card.cssClass}')
+        div.mdl-card__title
+        div.mdl-card__supporting-text Found at
+        div.mdl-card__actions.mdl-card--border
+          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href='#{card.link}', target='_blank') !{card.caption}
+    script.
+      $.registerWaypoint($('.#{card.cssClass}'), function() { $.loadCardImgAsync('#{card.cssClass}', '#{card.imgSrc}'); });
+  footer.mdl-mini-footer
+    div.mdl-mini-footer__right-section &copy; 2016 Maximilian Speicher
+  div#back
+    button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp(onclick='location.href="/goodmood"')
+      i.fa.fa-arrow-left
